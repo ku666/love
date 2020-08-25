@@ -46,9 +46,6 @@
 </body>
 <script>
     window.onload=function(){
-        document.getElementById('musicAudio').play()
-        document.getElementById('musicAudio').pause()
-        document.getElementById('musicAudio').play()
         let heartList = '';
         const n = 100;
         function getRandomColor() {
@@ -88,6 +85,9 @@
             }
         }, 100)
         document.getElementById('heart').innerHTML = heartList;
+        document.getElementById('musicAudio').play()
+        document.getElementById('musicAudio').pause()
+        document.getElementById('musicAudio').play()
     }
     
 </script>
