@@ -86,12 +86,17 @@
     document.getElementById('heart').innerHTML = heartList;
 </script> -->
 <script>
-    $('#image').animate('tile', {
-      duration: 2000,
-      rows: 12,
-      cols: 8,
-      effect: 'flyIn',
-      fillMode: 'backwards'
-    });  
+    window.onload=function(){
+        setTimeout(function(){
+            $('#image').animate('tile', {
+                duration: 2000,
+                rows: 12,
+                cols: 8,
+                effect: 'flyIn',
+                fillMode: 'backwards'
+            }); 
+        }, 200)
+    }
+     
 </script>
 </html>
