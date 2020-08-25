@@ -138,12 +138,12 @@
 
   function blind() 
   {
-    options = {
-      duration: 2000,
-      rows: 50,
-      sequent: false,
-      effect: 'slideFromDown'
-    };
+      options = {
+        duration: 2000,
+        rows: 50,
+        sequent: false,
+        effect: 'slideFromDown'
+      };
     animate();
   }
 
