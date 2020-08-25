@@ -92,11 +92,31 @@
         }
     }, 100)
     document.getElementById('heart').innerHTML = heartList;
-    document.getElementById('musicAudio').play()
-    document.getElementById('musicAudio').pause()
-    document.getElementById('musicAudio').play()
+    // document.getElementById('musicAudio').play()
+    // document.getElementById('musicAudio').pause()
+    // document.getElementById('musicAudio').play()
     
     
+</script>
+<script type="text/javascript">
+      var music = document.getElementById('musicAudio');
+
+        var state = 0;
+        document.addEventListener('touchstart', function(){
+            if(state==0){
+                music.play();
+                state=1;
+            }
+        }, false);
+
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            music.play();
+        }, false);
+        //循环播放
+        music.onended = function () {
+            music.load();
+            music.play();
+        }
 </script>
 <script>
     window.onload=function(){
